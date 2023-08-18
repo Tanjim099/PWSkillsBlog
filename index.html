@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>PWSkills Blog</h1>
+        <button id="addBlogBtn">+</button>
+    </header>
+    <main id="blogList">
+        <!-- Blog posts will be dynamically added here -->
+    </main>
+
+    <div id="addBlogModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="addBlogForm">
+                <!-- <label for="blogTitle">Title:</label> -->
+                <input type="text" id="blogTitle" placeholder="Title" required>
+                <!-- <label for="blogPoster">Poster:</label> -->
+                <input type="text" id="blogPoster" placeholder="Post Url">
+                <!-- <label for="blogDescription">Description:</label> -->
+                <input type="text" id="blogDescription" placeholder="Description" required>
+                <!-- <label for="blogContent">Content:</label> -->
+                <textarea id="blogContent" placeholder="Content" required></textarea>
+                <div id="alretBox">
+                    <p><span id="chars">0</span> Characters</p>
+                    <p id="charError">Please enter at least 1000 Characters</p>
+                </div>
+                <button type="submit">Add Blog</button>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
