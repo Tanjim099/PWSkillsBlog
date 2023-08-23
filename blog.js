@@ -1,16 +1,6 @@
 const blogs = localStorage.getItem("blogs");
-// console.log(blogs);
 const getBlogs = JSON.parse(blogs);
 console.log(getBlogs);
-// const title = document.getElementById("title");
-// title.innerText = getBlogs.title;
-// getBlogs.forEach(Blog => {
-//     console.log(Blog.title)
-//     const title = document.getElementById("title");
-//     title.innerText = getBlogs.title;
-// });
-
-// Function to go back to the home page from the
 function goBack() {
     window.URL = "index.html"
 }
